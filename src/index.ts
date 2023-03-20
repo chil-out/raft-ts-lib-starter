@@ -1,3 +1,1 @@
-export function sayHelloWorld() {
-  console.log("hello world");
-}
+export * from './tracer';

@@ -1,7 +1,7 @@
 {
   "name": "raft-otel-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "an opentelemetry library for raft web applications",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
   "umd": "./dist/index.umd.js",
@@ -20,6 +20,7 @@
     "@babel/preset-env": "^7.16.11",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "rimraf": "^3.0.2",
     "rollup": "^2.70.1",
@@ -31,6 +32,15 @@
     "dist"
   ],
   "dependencies": {
+    "@opentelemetry/api": "^1.4.1",
+    "@opentelemetry/auto-instrumentations-web": "^0.31.2",
+    "@opentelemetry/context-zone": "^1.10.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.36.0",
+    "@opentelemetry/instrumentation": "^0.36.0",
+    "@opentelemetry/instrumentation-long-task": "^0.32.2",
+    "@opentelemetry/resources": "^1.10.0",
+    "@opentelemetry/sdk-trace-web": "^1.10.0",
+    "@opentelemetry/semantic-conventions": "^1.10.0",
     "eslint": "^8.36.0",
     "prettier": "^2.8.5"
   }
